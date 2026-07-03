@@ -78,6 +78,71 @@ h6 {
 
 /* End CSS Reset */
 
+@property --text-primary {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #ece1c0;
+}
+@property --text-secondary {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #818781;
+}
+
+@property --color-bg0 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #101210;
+}
+@property --color-bg1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #2d312c;
+}
+@property --color-bg2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #363b35;
+}
+@property --color-bg3 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #383d37;
+}
+
+@property --color-primary {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #81af58;
+}
+@property --color-secondary {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #409cdc;
+}
+@property --color-accent {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #ceba49;
+}
+
+body {
+  background-color: var(--color-bg0);
+}
+
+#hero-container {
+  width: 100vw;
+  height: 100vh;
+}
+#hero-container h1 {
+}
+#hero-container h1 .title {
+  color: var(--text-primary);
+}
+#hero-container h1 .subtitle {
+  color: var(--text-secondary);
+}
+
 div#image {
   background-image: var(--url);
   background-size: cover;
@@ -85,7 +150,8 @@ div#image {
   aspect-ratio: 1;
 }
 
-#projects-container {
-  display: grid;
-  grid-template: repeat(8, 1fr) / repeat(8, 1fr);
-}
+/**/
+/* #projects-container { */
+/*   display: grid; */
+/*   grid-template: repeat(8, 1fr) / repeat(8, 1fr); */
+/* } */
