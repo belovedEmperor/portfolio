@@ -173,6 +173,9 @@ h6 {
   --size-s-1: calc(1rem / var(--scale));
   --size-s-2: calc(var(--size-s-1) / var(--scale));
   --size-s-3: calc(var(--size-s-2) / var(--scale));
+
+  --padding-sides: 0 1rem;
+  --border-radius-weird: 30% 10% 30% 10% / 10% 30% 10% 30%;
 }
 
 body {
@@ -180,11 +183,9 @@ body {
   font-size: 1rem;
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--text-primary);
+  padding-bottom: 1rem;
 }
 
-code,
-pre,
-.mono,
 .project-tag {
   font-family: "Space Mono", monospace;
 }
@@ -210,25 +211,18 @@ h4 {
   font-size: clamp(var(--size-s-1), 2vw + 0.25rem, var(--size-l-1));
 }
 
-small,
-.meta {
-  font-size: var(--size-s-1);
-}
-
 #hero-container {
   width: 100vw;
   height: 100vh;
+  padding: var(--padding-sides);
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 3rem;
 
   text-align: center;
-}
-#hero-container div {
-  position: absolute;
-  top: 25%;
 }
 #hero-container div h2 {
   color: var(--text-secondary);
@@ -237,18 +231,55 @@ small,
   width: 200px;
   aspect-ratio: 1;
 
-  border-top-right-radius: 10% 30%;
-  border-top-left-radius: 30% 10%;
-  border-bottom-right-radius: 30% 10%;
-  border-bottom-left-radius: 10% 30%;
+  border-radius: var(--border-radius-weird);
+}
 
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+#projects-container {
+  padding: var(--padding-sides);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #projects-grid {
-  display: grid;
-  grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+  /* display: grid; */
+  /* grid-template: repeat(8, 1fr) / repeat(8, 1fr); */
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project h3 {
+  color: var(--color-secondary);
+}
+
+.project ul {
+  list-style-type: none;
+  color: var(--color-accent);
+}
+
+.project ul li {
+  display: inline-block;
+  padding: 0 0.4rem;
+  background-color: var(--color-bg1);
+
+  border-style: solid;
+  border-width: 0.15rem;
+  border-radius: var(--border-radius-weird);
+}
+
+.tech-icon {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-right: 0.35rem;
+  vertical-align: -0.05rem;
 }
