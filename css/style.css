@@ -1,5 +1,4 @@
 /* Start CSS Reset */
-
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -78,80 +77,178 @@ h6 {
 
 /* End CSS Reset */
 
-@property --text-primary {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #ece1c0;
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../public/fonts/IBMPlexSans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-@property --text-secondary {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #818781;
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../public/fonts/IBMPlexSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("../public/fonts/SpaceMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("../public/fonts/SpaceMono-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("../public/fonts/SpaceMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("../public/fonts/SpaceMono-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TeX Gyre Adventor";
+  src: url("../public/fonts/texgyreadventor-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TeX Gyre Adventor";
+  src: url("../public/fonts/texgyreadventor-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TeX Gyre Adventor";
+  src: url("../public/fonts/texgyreadventor-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TeX Gyre Adventor";
+  src: url("../public/fonts/texgyreadventor-bolditalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
 
-@property --color-bg0 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #101210;
-}
-@property --color-bg1 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #2d312c;
-}
-@property --color-bg2 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #363b35;
-}
-@property --color-bg3 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #383d37;
-}
+:root {
+  --text-primary: #ece1c0;
+  --text-secondary: #818781;
 
-@property --color-primary {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #81af58;
-}
-@property --color-secondary {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #409cdc;
-}
-@property --color-accent {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #ceba49;
+  --color-bg0: #000000;
+  --color-bg1: #2d312c;
+  --color-bg2: #363b35;
+  --color-bg3: #383d37;
+
+  --color-primary: #81af58;
+  --color-secondary: #409cdc;
+  --color-accent: #ceba49;
+
+  --scale: 1.333;
+  /* Don't change the lines below, you only need to change the --scale above. */
+  --size-l-1: calc(1rem * var(--scale));
+  --size-l-2: calc(var(--size-l-1) * var(--scale));
+  --size-l-3: calc(var(--size-l-2) * var(--scale));
+  --size-l-4: calc(var(--size-l-3) * var(--scale));
+  --size-l-5: calc(var(--size-l-4) * var(--scale));
+  --size-l-6: calc(var(--size-l-5) * var(--scale));
+  --size-l-7: calc(var(--size-l-6) * var(--scale));
+  --size-s-1: calc(1rem / var(--scale));
+  --size-s-2: calc(var(--size-s-1) / var(--scale));
+  --size-s-3: calc(var(--size-s-2) / var(--scale));
 }
 
 body {
   background-color: var(--color-bg0);
+  font-size: 1rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--text-primary);
+}
+
+code,
+pre,
+.mono,
+.project-tag {
+  font-family: "Space Mono", monospace;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "TeX Gyre Adventor", sans-serif;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: clamp(var(--size-l-2), 5vw + 1rem, 6rem);
+}
+h2 {
+  font-size: clamp(var(--size-l-1), 4vw + 0.75rem, var(--size-l-3));
+}
+h3 {
+  font-size: clamp(1rem, 3vw + 0.5rem, var(--size-l-2));
+}
+h4 {
+  font-size: clamp(var(--size-s-1), 2vw + 0.25rem, var(--size-l-1));
+}
+
+small,
+.meta {
+  font-size: var(--size-s-1);
 }
 
 #hero-container {
   width: 100vw;
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  text-align: center;
 }
-#hero-container h1 {
+#hero-container div {
+  position: absolute;
+  top: 25%;
 }
-#hero-container h1 .title {
-  color: var(--text-primary);
-}
-#hero-container h1 .subtitle {
+#hero-container div h2 {
   color: var(--text-secondary);
 }
-
-div#image {
-  background-image: var(--url);
-  background-size: cover;
+#hero-container img {
   width: 200px;
   aspect-ratio: 1;
+
+  border-top-right-radius: 10% 30%;
+  border-top-left-radius: 30% 10%;
+  border-bottom-right-radius: 30% 10%;
+  border-bottom-left-radius: 10% 30%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/**/
-/* #projects-container { */
-/*   display: grid; */
-/*   grid-template: repeat(8, 1fr) / repeat(8, 1fr); */
-/* } */
+#projects-grid {
+  display: grid;
+  grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+}
