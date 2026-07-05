@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jason Huang - software engineer building Rust, TypeScript, and automation projects, from Playwright toolkits to SSR web apps."
+    />
+    <meta property="og:title" content="Jason Huang | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Rust, TypeScript, and automation projects by Jason Huang."
+    />
+    <meta property="og:image" content="public/business.jpg" />
+    <meta property="og:type" content="website" />
     <title>Portfolio | Jason Huang</title>
+    <link href="public/business.jpg" rel="icon" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="hero-container">
+    <header id="hero-container">
       <div>
         <h1>Jason Huang</h1>
-        <h2>Software Engineer</h2>
+        <p>Software Engineer</p>
       </div>
       <div id="image-container">
         <img
@@ -24,11 +36,11 @@
         <div></div>
         <div></div>
       </div>
-    </div>
-    <div id="projects-container">
+    </header>
+    <main id="projects-container">
       <h2>Projects</h2>
       <div id="projects-grid">
-        <div class="project">
+        <section class="project">
           <h3 class="project-title">clinic-bot</h3>
           <p class="project-description">
             Playwright-based automation toolkit for clinical office workflows.
@@ -64,8 +76,8 @@
               />Playwright
             </li>
           </ul>
-        </div>
-        <div class="project">
+        </section>
+        <section class="project">
           <h3 class="project-title">
             Watchtower (<a href="https://github.com/belovedEmperor/watchtower"
               >repo</a
@@ -100,8 +112,8 @@
             <li>REST API</li>
             <li>Web Scraping</li>
           </ul>
-        </div>
-        <div class="project">
+        </section>
+        <section class="project">
           <h3 class="project-title">
             Colorful Nails & Spa (<a
               href="https://github.com/belovedEmperor/colorful-nails"
@@ -156,8 +168,8 @@
               />WebAssembly
             </li>
           </ul>
-        </div>
-        <div class="project">
+        </section>
+        <section class="project">
           <h3 class="project-title">
             paus (<a href="https://github.com/belovedEmperor/paus">repo</a>)
           </h3>
@@ -184,8 +196,17 @@
             <li>Home Manager</li>
             <li>Unix Daemon</li>
           </ul>
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
+    <footer>
+      <div id="contact-container">
+        <p>Contact:</p>
+        <address>
+          <a href="mailto:h.jason.dev@gmail.com">h.jason.dev@gmail.com</a>
+        </address>
+      </div>
+      <small>&copy; 2026 Jason Huang</small>
+    </footer>
   </body>
 </html>
