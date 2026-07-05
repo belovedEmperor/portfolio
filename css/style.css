@@ -175,7 +175,7 @@ h6 {
   --size-s-3: calc(var(--size-s-2) / var(--scale));
 
   --padding-sides: 0 1rem;
-  --max-width: 48rem;
+  --max-width: 64rem;
   --border-radius-weird: 30% 10% 30% 10% / 10% 30% 10% 30%;
 }
 
