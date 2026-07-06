@@ -323,12 +323,12 @@ small {
 }
 .project ul {
   list-style-type: none;
-  color: var(--color-accent);
+  color: var(--text-primary);
 }
 .project ul li {
   display: inline-block;
   padding: 0 0.4rem;
-  background-color: var(--color-bg1);
+  background-color: var(--color-bg3);
 
   border-style: solid;
   border-width: 0.15rem;
