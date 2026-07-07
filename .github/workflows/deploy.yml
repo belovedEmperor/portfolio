@@ -24,11 +24,11 @@ jobs:
           bun-version: latest
       - run: bun install --frozen-lockfile
       - run: bun build index.ts --outdir dist
-      - run: cp index.html dist/ && cp -r css public dist/
+      - run: mkdir site && cp -r index.html css public dist site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./site
 
   deploy:
     needs: build
