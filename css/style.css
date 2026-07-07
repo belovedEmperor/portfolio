@@ -214,6 +214,7 @@ small {
 #hero-container,
 .section-container,
 #footer-container {
+  width: 100%;
   max-width: var(--max-width);
   margin-inline: auto;
   padding: var(--padding-sides);
