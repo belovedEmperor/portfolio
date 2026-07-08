@@ -392,6 +392,36 @@ main,
   border-radius: 1%;
 }
 
+#tools-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  place-items: center;
+}
+#tools-list li {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--color-bg3);
+
+  border-style: solid;
+  border-width: 0.15rem;
+  border-radius: var(--border-radius-weird);
+}
+#tools-list li h3 {
+  font-size: clamp(var(--size-s-1), 2vw + 0.25rem, var(--size-l-1));
+}
+#tools-list img {
+  width: 3rem;
+  height: 3rem;
+}
+#tools-list li p {
+  font-size: clamp(var(--size-s-1), 2vw + 0.25rem, var(--size-l-1));
+  font-family: "Space Mono", monospace;
+}
+
 footer {
   background-color: var(--color-bg1);
   padding: 1rem 0;
