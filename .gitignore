@@ -1,5 +1,2 @@
 .direnv
 Session.vim
-node_modules
-dist
-site
