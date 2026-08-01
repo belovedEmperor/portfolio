@@ -1,214 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Jason Huang - software engineer building Rust, TypeScript, and automation projects, from Playwright toolkits to SSR web apps."
-    />
-    <meta property="og:title" content="Jason Huang | Software Engineer" />
-    <meta
-      property="og:description"
-      content="Rust, TypeScript, and automation projects by Jason Huang."
-    />
-    <meta property="og:image" content="public/business.jpg" />
-    <meta property="og:type" content="website" />
-    <title>Portfolio | Jason Huang</title>
-    <link href="public/business.jpg" rel="icon" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header id="hero-container">
-      <div>
-        <h1>Jason Huang</h1>
-        <p>Software Engineer</p>
-      </div>
-      <div id="image-container">
-        <img
-          src="public/business.jpg"
-          alt="Jason Huang in a white dress shirt, black tie, tan chinos, and brown belt"
-          width="200"
-          height="200"
-        />
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </header>
-    <main id="projects-container">
-      <h2>Projects</h2>
-      <div id="projects-grid">
-        <section class="project">
-          <h3 class="project-title">clinic-bot</h3>
-          <p class="project-description">
-            Playwright-based automation toolkit for clinical office workflows.
-            It ships with both a CLI and an Electron/React desktop app and
-            stores credentials in the OS keychain instead of plaintext.
-          </p>
-          <ul>
-            <li>
-              <img
-                class="tech-icon"
-                src="public/icons/typescript.svg"
-                alt=""
-              />TypeScript
-            </li>
-            <li>
-              <img
-                class="tech-icon"
-                src="public/icons/electron.svg"
-                alt=""
-              />Electron
-            </li>
-            <li>
-              <img class="tech-icon" src="public/icons/react.svg" alt="" />React
-            </li>
-            <li>
-              <img class="tech-icon" src="public/icons/vite.svg" alt="" />Vite
-            </li>
-            <li>
-              <img
-                class="tech-icon"
-                src="public/icons/playwright.svg"
-                alt=""
-              />Playwright
-            </li>
-          </ul>
-        </section>
-        <section class="project">
-          <h3 class="project-title">
-            Watchtower (<a href="https://github.com/belovedEmperor/watchtower"
-              >repo</a
-            >
-            |
-            <a href="https://watchtower-red.vercel.app/">live</a>)
-          </h3>
-          <p class="project-description">
-            Academic planning system for Hunter College students. Helps turn
-            DegreeWorks audit data, course catalog data, prerequisite rules,
-            student preferences, and live course offerings into bespoke
-            schedules for students.
-          </p>
-          <ul>
-            <li>
-              <img class="tech-icon" src="public/icons/rust.svg" alt="" />Rust
-            </li>
-            <li>Axum</li>
-            <li>SQLx</li>
-            <li>
-              <img class="tech-icon" src="public/icons/tokio.svg" alt="" />Tokio
-            </li>
-            <li>Reqwest</li>
-            <li>Clap</li>
-            <li>
-              <img
-                class="tech-icon"
-                src="public/icons/postgresql.svg"
-                alt=""
-              />PostgreSQL
-            </li>
-            <li>REST API</li>
-            <li>Web Scraping</li>
-          </ul>
-        </section>
-        <section class="project">
-          <h3 class="project-title">
-            Colorful Nails & Spa (<a
-              href="https://github.com/belovedEmperor/colorful-nails"
-              >repo</a
-            >
-            |
-            <a href="https://colorful-nails-production.up.railway.app/">live</a
-            >)
-          </h3>
-          <p class="project-description">
-            SSR nail salon website that allows customers to see past designs,
-            check available services, and make appointments.
-          </p>
-          <ul>
-            <li>
-              <img class="tech-icon" src="public/icons/html5.svg" alt="" />HTML
-            </li>
-            <li>
-              <img class="tech-icon" src="public/icons/css3.svg" alt="" />CSS
-            </li>
-            <li>
-              <img
-                class="tech-icon"
-                src="public/icons/tailwindcss.svg"
-                alt=""
-              />TailwindCSS
-            </li>
-            <li>
-              <img class="tech-icon" src="public/icons/rust.svg" alt="" />Rust
-            </li>
-            <li>
-              <img
-                class="tech-icon"
-                src="public/icons/leptos.svg"
-                alt=""
-              />Leptos
-            </li>
-            <li>Axum</li>
-            <li>SQLx</li>
-            <li>
-              <img
-                class="tech-icon"
-                src="public/icons/postgresql.svg"
-                alt=""
-              />PostgreSQL
-            </li>
-            <li>
-              <img
-                class="tech-icon"
-                src="public/icons/webassembly.svg"
-                alt=""
-              />WebAssembly
-            </li>
-          </ul>
-        </section>
-        <section class="project">
-          <h3 class="project-title">
-            paus (<a href="https://github.com/belovedEmperor/paus">repo</a>)
-          </h3>
-          <p class="project-description">
-            A stopwatch based on the Third Time productivity method with a
-            background daemon that persists between commands and restarts.
-          </p>
-          <ul>
-            <li>
-              <img class="tech-icon" src="public/icons/rust.svg" alt="" />Rust
-            </li>
-            <li>
-              <img class="tech-icon" src="public/icons/tokio.svg" alt="" />Tokio
-            </li>
-            <li>Clap</li>
-            <li>Serde</li>
-            <li>
-              <img
-                class="tech-icon"
-                src="public/icons/nixos.svg"
-                alt=""
-              />Nix/NixOS
-            </li>
-            <li>Home Manager</li>
-            <li>Unix Daemon</li>
-          </ul>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div id="footer-container">
-        <div id="contact-container">
-          <p>Contact:</p>
-          <address>
-            <a href="mailto:h.jason.dev@gmail.com">h.jason.dev@gmail.com</a>
-          </address>
-        </div>
-        <small>&copy; 2026 Jason Huang</small>
-      </div>
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Jason Huang - software engineer building Rust, TypeScript, and automation projects, from Playwright toolkits to SSR web apps.">
+		<meta property="og:title" content="Jason Huang | Software Engineer">
+		<meta property="og:description" content="Rust, TypeScript, and automation projects by Jason Huang.">
+		<meta property="og:image" content="public/business.jpg">
+		<meta property="og:type" content="website">
+		<title>Portfolio | Jason Huang</title>
+		<link href="public/business.jpg" rel="icon">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<header id="hero-container">
+			<div>
+				<h1>Jason Huang</h1>
+				<p>Software Engineer</p>
+			</div>
+			<div id="image-container">
+				<img src="public/business.jpg" alt="Jason Huang in a white dress shirt, black tie, tan chinos, and brown belt" width="200" height="200">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</header>
+		<main id="projects-container">
+			<h2>Projects</h2>
+			<div id="projects-grid">
+				<section class="project">
+					<h3 class="project-title">clinic-bot</h3>
+					<p class="project-description">
+						Playwright-based automation toolkit for clinical office workflows.
+						It ships with both a CLI and an Electron/React desktop app and
+						stores credentials in the OS keychain instead of plaintext.
+					</p>
+					<ul>
+						<li>
+							<img class="tech-icon" src="public/icons/typescript.svg" alt="">TypeScript
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/electron.svg" alt="">Electron
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/react.svg" alt="">React
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/vite.svg" alt="">Vite
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/playwright.svg" alt="">Playwright
+						</li>
+					</ul>
+				</section>
+				<section class="project">
+					<h3 class="project-title">
+						Watchtower (<a href="https://github.com/belovedEmperor/watchtower">repo</a>
+						|
+						<a href="https://watchtower-red.vercel.app/">live</a>)
+					</h3>
+					<p class="project-description">
+						Academic planning system for Hunter College students. Helps turn
+						DegreeWorks audit data, course catalog data, prerequisite rules,
+						student preferences, and live course offerings into bespoke
+						schedules for students.
+					</p>
+					<ul>
+						<li>
+							<img class="tech-icon" src="public/icons/rust.svg" alt="">Rust
+						</li>
+						<li>Axum</li>
+						<li>SQLx</li>
+						<li>
+							<img class="tech-icon" src="public/icons/tokio.svg" alt="">Tokio
+						</li>
+						<li>Reqwest</li>
+						<li>Clap</li>
+						<li>
+							<img class="tech-icon" src="public/icons/postgresql.svg" alt="">PostgreSQL
+						</li>
+						<li>REST API</li>
+						<li>Web Scraping</li>
+					</ul>
+				</section>
+				<section class="project">
+					<h3 class="project-title">
+						Colorful Nails & Spa (<a href="https://github.com/belovedEmperor/colorful-nails">repo</a>
+						|
+						<a href="https://colorful-nails-production.up.railway.app/">live</a>)
+					</h3>
+					<p class="project-description">
+						SSR nail salon website that allows customers to see past designs,
+						check available services, and make appointments.
+					</p>
+					<ul>
+						<li>
+							<img class="tech-icon" src="public/icons/html5.svg" alt="">HTML
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/css3.svg" alt="">CSS
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/tailwindcss.svg" alt="">TailwindCSS
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/rust.svg" alt="">Rust
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/leptos.svg" alt="">Leptos
+						</li>
+						<li>Axum</li>
+						<li>SQLx</li>
+						<li>
+							<img class="tech-icon" src="public/icons/postgresql.svg" alt="">PostgreSQL
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/webassembly.svg" alt="">WebAssembly
+						</li>
+					</ul>
+				</section>
+				<section class="project">
+					<h3 class="project-title">
+						paus (<a href="https://github.com/belovedEmperor/paus">repo</a>)
+					</h3>
+					<p class="project-description">
+						A stopwatch based on the Third Time productivity method with a
+						background daemon that persists between commands and restarts.
+					</p>
+					<ul>
+						<li>
+							<img class="tech-icon" src="public/icons/rust.svg" alt="">Rust
+						</li>
+						<li>
+							<img class="tech-icon" src="public/icons/tokio.svg" alt="">Tokio
+						</li>
+						<li>Clap</li>
+						<li>Serde</li>
+						<li>
+							<img class="tech-icon" src="public/icons/nixos.svg" alt="">Nix/NixOS
+						</li>
+						<li>Home Manager</li>
+						<li>Unix Daemon</li>
+					</ul>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div id="footer-container">
+				<div id="contact-container">
+					<p>Contact:</p>
+					<address>
+						<a href="mailto:h.jason.dev@gmail.com">h.jason.dev@gmail.com</a>
+					</address>
+				</div>
+				<small>&copy; 2026 Jason Huang</small>
+			</div>
+		</footer>
+	</body>
 </html>
